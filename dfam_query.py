@@ -90,11 +90,6 @@ def coding_seqs(famd, fa_file='coding_seqs.faa', tsv_file='coding_seqs.tsv'):
                     print('\t'.join(map(str, row)), file=out_tsv)
 
 
-if __name__ == '__main__':
-    sums = search_families("Homo sapiens")
-    famd = load_families(sums)
-    coding_seqs(famd, 'coding_seqs.hs.faa', 'coding_seqs.hs.tsv')
-
 
 
 
